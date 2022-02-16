@@ -1,27 +1,35 @@
-document.querySelector("body").style.backgroundColor = "cadetblue";
-const myDiv = document.querySelector(".hi");
+const body = document.querySelector("body");
+const myDiv = document.querySelector(".cardDisplay");
 
-const url = "https://digimon-api.vercel.app/api/digimon";
+const cardsUrl = "https://api.pokemontcg.io/v2/cards/"
+// const typesUrl = "https://api.pokemontcg.io/v2/types"
+// KEY: "86d290b1-fb1f-4265-985f-7b0f4f40cc52"
 
-fetch(url)
+fetch(cardsUrl)
 .then(function(response){
     return response.json();
 })
 .then(function(myData){
-    console.log(myData);
-    // let html = "";
-    // const test = myData;
-    // for (let i = 0; i < 10; i++) {
-    //     html = `
-    //     <div>
-    //     <img src="${myData[i].img}" alt="picture">
-    //     <h2>${myData[i].name}</h2>
-    //     <p>Current Level: ${myData[i].level}</p>
-    //     </div>
-    //     `
-    //     myDiv.innerHTML += html;
-    // }
+    // console.log(myData);
+    let html = "";
+    const data = myData.data;
+    let counter = 0;
+
+    // console.log(data[0].images.large);
+    for (let card of data) {
+        html = `
+        <a href="details.html${details + card.id}">
+        <div class="cards">
+        <img src="${card.images.small}" alt="picture">
+        </div></a>
+        `
+        myDiv.innerHTML += html;
+        if (++counter >= 20) break;
+    }
 })
-// .catch(function(error){
-//     console.error("There's a monster on the loose!");
-// })
+.catch(function(error){
+    console.error("There's a monster on the loose!");
+})
+.finally(function(final) {
+    document.querySelector(".loading").remove();
+})
