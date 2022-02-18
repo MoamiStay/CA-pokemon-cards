@@ -1,19 +1,12 @@
-const body = document.querySelector("body");
 const myDiv = document.querySelector(".cardDisplay");
 
-const cardsUrl = "https://api.pokemontcg.io/v2/cards/"
+const cardsUrl = "https://api.pokemontcg.io/v2/cards/?pageSize=100"
 // const typesUrl = "https://api.pokemontcg.io/v2/types"
-// KEY: "86d290b1-fb1f-4265-985f-7b0f4f40cc52"
-// GET /something HTTP/1.1. X-API-Key: abcdef12345.
 
-fetch(cardsUrl)
-.then(function(response){
-    return response.json();
-})
-.then(function(myData){
-    console.log(myData);
+function listData(list){
+    // console.log(list);
     let html = "";
-    const data = myData.data;
+    const data = list.data;
     let counter = 0;
 
     // console.log(data[0].images.large);
@@ -27,7 +20,16 @@ fetch(cardsUrl)
         myDiv.innerHTML += html;
         if (++counter >= 20) break;
     }
+}
+
+fetch(cardsUrl, {
+    "method": "GET",
+    "headers": {
+        "X-Api-Key": "86d290b1-fb1f-4265-985f-7b0f4f40cc52"
+    }
 })
+.then((response) => response.json())
+.then((myData) => listData(myData))
 .catch(function(error){
     console.error("There's a monster on the loose!");
     myDiv.innerHTML =
@@ -35,6 +37,4 @@ fetch(cardsUrl)
     <img src="media/surprisedPikachu.png" alt="surprised pikachu" />
     </div>`
 })
-.finally(function(final) {
-    document.querySelector(".loading").remove();
-})
+.finally((final) => document.querySelector(".loading").remove());

@@ -1,44 +1,43 @@
 const queryString = document.location.search;
-// const params = new URLSearchParams(queryString);
-// const id = params.get("id");
+const params = new URLSearchParams(queryString);
+const id = params.get("q");
 // console.log(id);
 
 const detailsOut = document.querySelector(".cardDetails");
 const title = document.querySelector("title");
 
-const detailsUrl = `https://api.pokemontcg.io/v2/cards${queryString}`;
+const detailsUrl = `https://api.pokemontcg.io/v2/cards?q=${id}`;
 // console.log(`${detailsUrl}`);
-fetch(detailsUrl)
-.then(function(response){
-    return response.json();
-})
-.then(function(details){
-    // console.log(details);
-    const data = details.data;
-    // console.log(details);
+
+function listDetails(list) {
+    // console.log(list);
+    const data = list.data;
+    // console.log(data[0]);
     let html = "";
 
-    for(let i = 0; i < data.length; i++) {
         html = `
         <div>
-        <img src="${data[i].images.small}" alt="image" />
-        <h1>Name: ${data[i].name}</h1>
-        <p>Rarity: ${data[i].rarity}</p>
-        <p>Artist: ${data[i].artist}</p>
-        <p><a href="${data[i].cardmarket.url}" target="_blank">Card Market</a></p>
+        <img src="${data[0].images.small}" alt="image" />
+        <h1>Name: ${data[0].name}</h1>
+        <p>Rarity: ${data[0].rarity}</p>
+        <p>Artist: ${data[0].artist}</p>
+        <p><a href="${data[0].cardmarket.url}" target="_blank">Card Market</a></p>
         </div>
         ` 
-        title.innerHTML = `${data[i].name}`;
+        title.innerHTML = `${data[0].name}`;
         detailsOut.innerHTML += html;
-    }
-})
+}
+
+
+
+fetch(detailsUrl)
+.then((response) => response.json())
+.then((myData) => listDetails(myData))
 .catch(function(error){
     console.error("There's a pikachu on the loose!");
-    myDiv.innerHTML = `
+    detailsOut.innerHTML = `
     <div class="error-message">
     <img src="media/surprisedPikachu.png" alt="surprised pikachu" />
     </div>`
 })
-.finally(function(final) {
-    document.querySelector(".loading").remove();
-})
+.finally((final) => document.querySelector(".loading").remove());
