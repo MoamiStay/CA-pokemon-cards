@@ -31,10 +31,12 @@ fetch(cardsUrl, {
 .then((response) => response.json())
 .then((myData) => listData(myData))
 .catch(function(error){
-    console.error("There's a monster on the loose!");
-    myDiv.innerHTML =
-    `<div class="error-message">
-    <img src="media/surprisedPikachu.png" alt="surprised pikachu" />
+    console.error("Something went wrong here...");
+    myDiv.innerHTML =`
+    <div class="error-message">
+    <img src="media/surprisedPikachu.png" class="error" alt="surprised pikachu" />
+    <p>Oops.. Seems like something went wrong</p>
+    <a href="/index.html">Go back</a>
     </div>`
 })
 .finally((final) => document.querySelector(".loading").remove());

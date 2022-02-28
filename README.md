@@ -1,5 +1,39 @@
 # regine-naas-Js1-CA
 
+Refs:
+
+I did not care about finding images that are free to use for this project. I just Google'n Grab.
+(Of course I would never do this for a public website)
+
+PIKACHU RUNNER:
+https://tenor.com/view/pikachu-running-run-run-away-gif-13709403
+
+RICKACHU:
+https://www.vhv.rs/viewpic/hxJwbJb_transparent-pikachu-face-clip-art-pikachu-chibi-transparent/
+
+SURPRISED PIKACHU:
+https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-download/
+
+SAD PIKACHU:
+https://www.klipartz.com/en/sticker-png-kpzlv
+
+<!-- -> fetch - function -->
+<!-- -> str.length -->
+
+<!-- -> fjern for(loop) in details page -->
+
+<!-- -> add links to RegEx -->
+
+<!-- -> 404 page design -->
+
+-> added security: if null or multiple is retrieved
+
+<!-- -> details to card list "back" link -->
+
+<!-- -> Hover effect for card on home-page -->
+
+ASSIGNMENT:
+
 <!-- Level 1 Process
 Find an API
 Search for a public, free-to-use API.
@@ -63,92 +97,3 @@ Submission
 Create a folder called your-name-js1-ca , e.g. mary-smith-js1-ca (or use the folder from
 the GitHub Classroom repo)
 Add all your code to this folder, zip the folder and submit the zip file
-
-Refs:
-
-PIKACHU RUNNER:
-https://tenor.com/view/pikachu-running-run-run-away-gif-13709403
-
-RICKACHU:
-https://www.vhv.rs/viewpic/hxJwbJb_transparent-pikachu-face-clip-art-pikachu-chibi-transparent/
-
-SURPRISED PIKACHU:
-https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-download/
-
-SAD PIKACHU:
-https://www.klipartz.com/en/sticker-png-kpzlv
-
-<!-- -> fetch - function -->
-<!-- -> str.length -->
-
-<!-- -> fjern for(loop) in details page -->
-
-<!-- -> add links to RegEx -->
-
--> 404 page design
--> added security: if null or multiple is retrieved
--> sort by type
--> details to card list "back" link
-
-<!--
-const body = document.querySelector("body");
-const myDiv = document.querySelector(".cardDisplay");
-
-const cardsUrl = "https://api.pokemontcg.io/v2/cards/?pageSize=30"
-// const typesUrl = "https://api.pokemontcg.io/v2/types"
-// KEY: "86d290b1-fb1f-4265-985f-7b0f4f40cc52"
-// GET /something HTTP/1.1. X-API-Key: abcdef12345.
-
-fetch(cardsUrl, {
-    "method": "GET",
-    "headers": {
-        "X-Api-Key": "86d290b1-fb1f-4265-985f-7b0f4f40cc52"
-    }
-})
-.then(function(response){
-    return response.json();
-})
-.then(function(myData){
-    console.log(myData);
-    let html = "";
-    const data = myData.data;
-    let counter = 0;
-
-    // console.log(data[0].images.large);
-    for (let card of data) {
-        html = `
-        <a href="details.html?q=id:${card.id}">
-        <div class="cards">
-        <img src="${card.images.small}" alt="picture">
-        </div></a>
-        `
-        myDiv.innerHTML += html;
-        // if (++counter >= 20) break;
-    }
-})
-.catch(function(error){
-    console.error("There's a monster on the loose!");
-    myDiv.innerHTML =
-    `<div class="error-message">
-    <img src="media/surprisedPikachu.png" alt="surprised pikachu" />
-    </div>`
-})
-.finally(function(final) {
-    document.querySelector(".loading").remove();
-}) -->
-
-<!--
-
-    for(let i = 0; i < data.length; i++) {
-        html = `
-        <div>
-        <img src="${data[i].images.small}" alt="image" />
-        <h1>Name: ${data[i].name}</h1>
-        <p>Rarity: ${data[i].rarity}</p>
-        <p>Artist: ${data[i].artist}</p>
-        <p><a href="${data[i].cardmarket.url}" target="_blank">Card Market</a></p>
-        </div>
-        `
-        title.innerHTML = `${data[i].name}`;
-        detailsOut.innerHTML += html;
-    } -->
