@@ -4,7 +4,7 @@ const cardsUrl = "https://api.pokemontcg.io/v2/cards/?pageSize=100"
 // const typesUrl = "https://api.pokemontcg.io/v2/types"
 
 function listData(list){
-    // console.log(list);
+    console.log(list);
     let html = "";
     const data = list.data;
     let counter = 0;
@@ -18,6 +18,7 @@ function listData(list){
         </div></a>
         `
         myDiv.innerHTML += html;
+        if (card === null || card === undefined) {continue};
         if (++counter >= 20) break;
     }
 }

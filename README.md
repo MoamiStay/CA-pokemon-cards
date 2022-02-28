@@ -17,21 +17,6 @@ https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-downloa
 SAD PIKACHU:
 https://www.klipartz.com/en/sticker-png-kpzlv
 
-<!-- -> fetch - function -->
-<!-- -> str.length -->
-
-<!-- -> fjern for(loop) in details page -->
-
-<!-- -> add links to RegEx -->
-
-<!-- -> 404 page design -->
-
--> added security: if null or multiple is retrieved
-
-<!-- -> details to card list "back" link -->
-
-<!-- -> Hover effect for card on home-page -->
-
 ASSIGNMENT:
 
 <!-- Level 1 Process

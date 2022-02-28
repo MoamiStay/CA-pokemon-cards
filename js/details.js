@@ -28,8 +28,6 @@ function listDetails(list) {
         detailsOut.innerHTML += html;
 }
 
-
-
 fetch(detailsUrl)
 .then((response) => response.json())
 .then((myData) => listDetails(myData))
