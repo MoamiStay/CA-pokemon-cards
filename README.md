@@ -2,9 +2,6 @@
 
 Refs:
 
-I did not care about finding images that are free to use for this project. I just Google'n Grab.
-(Of course I would never do this for a public website)
-
 PIKACHU RUNNER:
 https://tenor.com/view/pikachu-running-run-run-away-gif-13709403
 
@@ -16,6 +13,10 @@ https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-downloa
 
 SAD PIKACHU:
 https://www.klipartz.com/en/sticker-png-kpzlv
+
+# !
+I did not care about finding images that are free to use for this project. I just Google'n Grab.
+(Of course I would never do this for a public website)
 
 ASSIGNMENT:
 
@@ -77,8 +78,3 @@ inputs fail validation display an error message for the relevant input. -->
 contact.html
 If all validation passes, add a message above the form indicating the form passed
 validation. -->
-
-Submission
-Create a folder called your-name-js1-ca , e.g. mary-smith-js1-ca (or use the folder from
-the GitHub Classroom repo)
-Add all your code to this folder, zip the folder and submit the zip file
