@@ -1,5 +1,8 @@
 # regine-naas-Js1-CA
 
+Task:
+Find a public free-to-use API and display some data from the API to the website.
+
 Refs:
 
 PIKACHU RUNNER:
@@ -18,7 +21,6 @@ https://www.klipartz.com/en/sticker-png-kpzlv
 I did not care about finding images that are free to use for this project. I just Google'n Grab.
 (Of course I would never do this for a public website)
 
-ASSIGNMENT:
 
 <!-- Level 1 Process
 Find an API
