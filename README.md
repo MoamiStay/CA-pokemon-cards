@@ -1,6 +1,6 @@
 # regine-naas-Js1-CA
 
-![Pikachu](./media/pikachu.jpg")  
+![Running Pikachu](./media/pikachu.jpg "Running Pikachu")  
 [Visit deployed site here](https://pokemon-cards-freeapi.netlify.app/ "Pikachu")  
 
 ---
@@ -24,7 +24,7 @@ https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-downloa
 SAD PIKACHU:  
 https://www.klipartz.com/en/sticker-png-kpzlv  
 
-# !
+# !  
 I did not care about finding images that are free to use for this small school project. I just Google'n Grabbed. Sorry.
 (Of course I would never do this for any other official public websites for myself or potential clients..)
 
