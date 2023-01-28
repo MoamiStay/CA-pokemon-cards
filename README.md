@@ -1,5 +1,9 @@
 # regine-naas-Js1-CA
 
+![Pikachu](./media/readme/woodz.jpg "WOODZ homepage")  
+[Visit deployed site here](https://pokemon-cards-freeapi.netlify.app/ "Pikachu")
+
+
 Task:
 Find a public free-to-use API and display some data from the API to the website.
 
