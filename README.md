@@ -1,4 +1,4 @@
-# regine-naas-Js1-CA
+# CA Pokemon cards API
 
 ![Running Pikachu](./media/pikachu.jpg "Running Pikachu")  
 [Visit deployed site here](https://pokemon-cards-freeapi.netlify.app/ "Pikachu")  
