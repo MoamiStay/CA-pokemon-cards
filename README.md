@@ -1,29 +1,32 @@
 # regine-naas-Js1-CA
 
-![Pikachu](./media/readme/woodz.jpg "WOODZ homepage")  
-[Visit deployed site here](https://pokemon-cards-freeapi.netlify.app/ "Pikachu")
+![Pikachu](./media/pikachu.jpg")  
+[Visit deployed site here](https://pokemon-cards-freeapi.netlify.app/ "Pikachu")  
 
+---
 
-Task:
-Find a public free-to-use API and display some data from the API to the website.
+# Assignment:
+Find a public free-to-use API and display some data from the API to the website. Also create a simple contact form with js validation.  
 
-Refs:
+---
 
-PIKACHU RUNNER:
-https://tenor.com/view/pikachu-running-run-run-away-gif-13709403
+# Images:  
 
-RICKACHU:
-https://www.vhv.rs/viewpic/hxJwbJb_transparent-pikachu-face-clip-art-pikachu-chibi-transparent/
+PIKACHU RUNNER:  
+https://tenor.com/view/pikachu-running-run-run-away-gif-13709403  
 
-SURPRISED PIKACHU:
-https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-download/
+RICKACHU:  
+https://www.vhv.rs/viewpic/hxJwbJb_transparent-pikachu-face-clip-art-pikachu-chibi-transparent/  
 
-SAD PIKACHU:
-https://www.klipartz.com/en/sticker-png-kpzlv
+SURPRISED PIKACHU:  
+https://www.vhv.rs/viewpic/hiJJiwh_image-of-pikachu-decal-cartoon-hd-png-download/  
+
+SAD PIKACHU:  
+https://www.klipartz.com/en/sticker-png-kpzlv  
 
 # !
-I did not care about finding images that are free to use for this project. I just Google'n Grab.
-(Of course I would never do this for a public website)
+I did not care about finding images that are free to use for this small school project. I just Google'n Grabbed. Sorry.
+(Of course I would never do this for any other official public websites for myself or potential clients..)
 
 
 <!-- Level 1 Process
